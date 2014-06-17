@@ -21,7 +21,7 @@ jQuery(document).ready(function($) {
           var overlayNumber = $(this).data('psd-number');
           $overlayImage = $(this).find('img');
           // This value is for the image positioning
-          $overlayWidth = $overlayImage.width();
+          $overlayWidth = $overlayImage.attr('width');
           $positioningValue = '-' + $overlayWidth / 2 + 'px';
 
           // Set the negative value of the image for positioning
@@ -92,7 +92,6 @@ jQuery(document).ready(function($) {
       }
 
       // }
-      console.log("IN");
       // If one is then toggle it up!
       // $(this).toggleClass('top-level-overlay-active').find('li.state-active').toggleClass('state-active');
       $(this).toggleClass('top-level-overlay-active');
