@@ -15,13 +15,20 @@ jQuery(document).ready(function($) {
 
     function comparePSDvsScreen(PSD) {
       var theWindow = window.innerWidth;
-      var $PSD = $(PSD).attr('width');
-      console.log(this);
+      var $PSD = $(PSD).width();
+      var PSDParent = $(PSD).parent();
+      console.log(theWindow);
+      console.log($PSD);
 
       // Check if any of the PSD's are too wide for the screen
-      if ( $PSD > theWindow ) {
-        console.log("ITS TOO BIG");
+      if ( $PSD < theWindow ) {
+        addWarningClass(PSDParent);
       };
+    }
+
+    function addWarningClass(PSDParent) {
+      $(PSDParent).addClass('warning-too-big');
+      alert("This overlay is wider than your screen currently. Make your screen bigger or adjust the size of the overlay.")
     }
 
 
@@ -35,7 +42,7 @@ jQuery(document).ready(function($) {
           $overlayWidth = $overlayImage.attr('width');
           $positioningValue = '-' + $overlayWidth / 2 + 'px';
 
-          comparePSDvsScreen($overlayImage);
+          // comparePSDvsScreen($overlayImage);
 
           // Set the negative value of the image for positioning
           $overlayImage.css( 'margin-left', $positioningValue );
@@ -73,7 +80,8 @@ jQuery(document).ready(function($) {
 
     // Clicking the item
     $togglePSDListItem.on('click', function(){
-      comparePSDvsScreen();
+      var PSD = $(this).find('.toggle-psd-overlay');
+      comparePSDvsScreen(PSD);
 
       // Get state for the clicked item
       $activeClass = $(this).hasClass('state-active');
@@ -86,8 +94,6 @@ jQuery(document).ready(function($) {
 
       // Add active state to the clicked item
       $(this).turnOn();
-
-      comparePSDvsScreen();
 
       // Check if the item has state-active
       // If so that means that this is their second click

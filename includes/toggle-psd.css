@@ -12,6 +12,10 @@
   margin-bottom: 3px;
 }
 
+#wpadminbar #wp-admin-bar-toggle-psd ul li.toggle-psd-item.warning-too-big {
+  background: #D84545;
+}
+
 #wpadminbar #wp-admin-bar-toggle-psd ul li.toggle-psd-item > .ab-item.ab-empty-item {
   line-height: 34px;
   text-indent: 5px;
