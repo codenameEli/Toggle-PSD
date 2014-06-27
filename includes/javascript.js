@@ -13,6 +13,17 @@ jQuery(document).ready(function($) {
       $(this).prepend('<button class="toggle-state-hidden">O</button>');
     });
 
+    function comparePSDvsScreen(PSD) {
+      var theWindow = window.innerWidth;
+      var $PSD = $(PSD).attr('width');
+      console.log(this);
+
+      // Check if any of the PSD's are too wide for the screen
+      if ( $PSD > theWindow ) {
+        console.log("ITS TOO BIG");
+      };
+    }
+
 
     // Find the data number of each admin bar
     $.fn.matchUpDataNumbers = function() {
@@ -24,8 +35,10 @@ jQuery(document).ready(function($) {
           $overlayWidth = $overlayImage.attr('width');
           $positioningValue = '-' + $overlayWidth / 2 + 'px';
 
+          comparePSDvsScreen($overlayImage);
+
           // Set the negative value of the image for positioning
-          $overlayImage.css( 'left', $positioningValue );
+          $overlayImage.css( 'margin-left', $positioningValue );
 
           // Check if it is already active
           if ( $overlayImage.hasClass('overlay-active') ) {
@@ -60,6 +73,7 @@ jQuery(document).ready(function($) {
 
     // Clicking the item
     $togglePSDListItem.on('click', function(){
+      comparePSDvsScreen();
 
       // Get state for the clicked item
       $activeClass = $(this).hasClass('state-active');
@@ -72,6 +86,8 @@ jQuery(document).ready(function($) {
 
       // Add active state to the clicked item
       $(this).turnOn();
+
+      comparePSDvsScreen();
 
       // Check if the item has state-active
       // If so that means that this is their second click

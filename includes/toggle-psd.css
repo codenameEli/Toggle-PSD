@@ -28,13 +28,17 @@
 }
 
 /* Overlay Settings */
-.overlay-image .active-overlay {
+/*.overlay-image .active-overlay {
   display: block;
   position: absolute;
   top: 0;
   left: 0;
   opacity: .6;
   margin-top: 32px;
+}*/
+
+li.overlay-image img {
+  display: none;
 }
 
 #listOfOverlays .overlay-image .inactive-overlay {
@@ -44,9 +48,12 @@
 #listOfOverlays li img.overlay-active {
   display: block;
   position: absolute;
-  opacity: .5;
-  margin-left: 50%;
-  top: 0;
+  left: 50%;
+  top: 32px;
+  z-index: 99999;
+  opacity: 0.6;
+  max-width: none;
+  margin-left: -1200px;
 }
 
 /* Button Settings */
