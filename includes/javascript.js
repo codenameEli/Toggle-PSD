@@ -13,6 +13,7 @@ jQuery(document).ready(function($) {
       $(this).prepend('<button class="toggle-state-hidden">O</button>');
     });
 
+<<<<<<< HEAD
     // function comparePSDvsScreen(PSD) {
     //   var theWindow = window.innerWidth;
     //   var $PSD = $(PSD).width();
@@ -34,6 +35,25 @@ jQuery(document).ready(function($) {
     //   }   
     //   $(PSDParent).removeClass('warning-too-big');  
     // }
+=======
+    function comparePSDvsScreen(PSD) {
+      var theWindow = window.innerWidth;
+      var $PSD = $(PSD).width();
+      var PSDParent = $(PSD).parent();
+      console.log(theWindow);
+      console.log($PSD);
+
+      // Check if any of the PSD's are too wide for the screen
+      if ( $PSD < theWindow ) {
+        addWarningClass(PSDParent);
+      };
+    }
+
+    function addWarningClass(PSDParent) {
+      $(PSDParent).addClass('warning-too-big');
+      alert("This overlay is wider than your screen currently. Make your screen bigger or adjust the size of the overlay.")
+    }
+>>>>>>> 89211fcfeedb70fde1ff162991da53222a188eb3
 
 
     // Find the data number of each admin bar
@@ -85,7 +105,11 @@ jQuery(document).ready(function($) {
     // Clicking the item
     $togglePSDListItem.on('click', function(){
       var PSD = $(this).find('.toggle-psd-overlay');
+<<<<<<< HEAD
       // comparePSDvsScreen(PSD);
+=======
+      comparePSDvsScreen(PSD);
+>>>>>>> 89211fcfeedb70fde1ff162991da53222a188eb3
 
       // Get state for the clicked item
       $activeClass = $(this).hasClass('state-active');

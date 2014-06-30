@@ -13,6 +13,7 @@
 }
 
 #wpadminbar #wp-admin-bar-toggle-psd ul li.toggle-psd-item.warning-too-big {
+<<<<<<< HEAD
   -webkit-animation: warnthem 1s ease-in-out;
   animation: warnthem 1s ease-in-out;
 }
@@ -41,6 +42,9 @@
     100% {
       background: transparent;
     }
+=======
+  background: #D84545;
+>>>>>>> 89211fcfeedb70fde1ff162991da53222a188eb3
 }
 
 #wpadminbar #wp-admin-bar-toggle-psd ul li.toggle-psd-item > .ab-item.ab-empty-item {
