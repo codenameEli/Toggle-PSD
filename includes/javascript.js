@@ -13,6 +13,28 @@ jQuery(document).ready(function($) {
       $(this).prepend('<button class="toggle-state-hidden">O</button>');
     });
 
+    // function comparePSDvsScreen(PSD) {
+    //   var theWindow = window.innerWidth;
+    //   var $PSD = $(PSD).width();
+    //   var PSDParent = $(PSD).parent();
+
+    //   // Check if any of the PSD's are too wide for the screen
+    //   if ( $PSD > theWindow ) {
+    //     addWarningClass(PSDParent);
+    //   };
+    // }
+
+    // function addWarningClass(PSDParent) {
+    //   var checkForClass = $(PSDParent).hasClass('warning-too-big');
+
+    //   if( checkForClass === false ){
+    //     $(PSDParent).addClass('warning-too-big');
+    //     alert("This overlay is wider than your screen currently. Make your screen bigger or adjust the size of the overlay.")
+    //     return;
+    //   }   
+    //   $(PSDParent).removeClass('warning-too-big');  
+    // }
+
 
     // Find the data number of each admin bar
     $.fn.matchUpDataNumbers = function() {
@@ -21,11 +43,13 @@ jQuery(document).ready(function($) {
           var overlayNumber = $(this).data('psd-number');
           $overlayImage = $(this).find('img');
           // This value is for the image positioning
-          $overlayWidth = $overlayImage.width();
+          $overlayWidth = $overlayImage.attr('width');
           $positioningValue = '-' + $overlayWidth / 2 + 'px';
 
+          // comparePSDvsScreen($overlayImage);
+
           // Set the negative value of the image for positioning
-          $overlayImage.css( 'left', $positioningValue );
+          $overlayImage.css( 'margin-left', $positioningValue );
 
           // Check if it is already active
           if ( $overlayImage.hasClass('overlay-active') ) {
@@ -60,6 +84,8 @@ jQuery(document).ready(function($) {
 
     // Clicking the item
     $togglePSDListItem.on('click', function(){
+      var PSD = $(this).find('.toggle-psd-overlay');
+      // comparePSDvsScreen(PSD);
 
       // Get state for the clicked item
       $activeClass = $(this).hasClass('state-active');
@@ -92,7 +118,6 @@ jQuery(document).ready(function($) {
       }
 
       // }
-      console.log("IN");
       // If one is then toggle it up!
       // $(this).toggleClass('top-level-overlay-active').find('li.state-active').toggleClass('state-active');
       $(this).toggleClass('top-level-overlay-active');

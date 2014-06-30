@@ -12,6 +12,37 @@
   margin-bottom: 3px;
 }
 
+#wpadminbar #wp-admin-bar-toggle-psd ul li.toggle-psd-item.warning-too-big {
+  -webkit-animation: warnthem 1s ease-in-out;
+  animation: warnthem 1s ease-in-out;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes warnthem {
+    0% {
+      background: transparent;
+    }
+    50% {
+      background: #E04646;
+    }
+    100% {
+      background: transparent;
+    }
+}
+
+/* Standard syntax */
+@keyframes warnthem {
+    0% {
+      background: transparent;
+    }
+    50% {
+      background: #E04646;
+    }
+    100% {
+      background: transparent;
+    }
+}
+
 #wpadminbar #wp-admin-bar-toggle-psd ul li.toggle-psd-item > .ab-item.ab-empty-item {
   line-height: 34px;
   text-indent: 5px;
@@ -28,13 +59,17 @@
 }
 
 /* Overlay Settings */
-.overlay-image .active-overlay {
+/*.overlay-image .active-overlay {
   display: block;
   position: absolute;
   top: 0;
   left: 0;
   opacity: .6;
   margin-top: 32px;
+}*/
+
+li.overlay-image img {
+  display: none;
 }
 
 #listOfOverlays .overlay-image .inactive-overlay {
@@ -44,9 +79,12 @@
 #listOfOverlays li img.overlay-active {
   display: block;
   position: absolute;
-  opacity: .5;
-  margin-left: 50%;
+  left: 50%;
   top: 32px;
+  z-index: 99999;
+  opacity: 0.6;
+  max-width: none;
+  margin-left: -1200px;
 }
 
 /* Button Settings */

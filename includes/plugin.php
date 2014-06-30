@@ -29,6 +29,9 @@ function get_all_psds() {
 
 		// Get the image to output it to the list
 		$overlayImage = get_the_post_thumbnail( $post->ID, null, $attr );
+		// $link = wp_get_attachment_url( $get_post_thumbnail_id( $post->ID ) );
+		$thumbnailID = get_post_thumbnail_id( $post->ID );
+		$link = wp_get_attachment_url( $thumbnailID );
 
 		$output .= '<li class="overlay-image overlay-image-' . $count . '"'. 'data-psd-number="' . $count . '">';
 			$output .= $overlayImage;
