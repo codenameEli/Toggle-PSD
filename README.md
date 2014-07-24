@@ -22,6 +22,7 @@ This plugin allows you to overlay images of what you expect to the website look 
 Contributors
 ==================================
 [@salcode](https://github.com/salcode)
+==================================
 
 == Frequently Asked Questions ==
 1. Where is the negative margin being set? It is being set in Javascript. It takes the width of your image, halves it and sets that to the negative margin.
