@@ -17,12 +17,11 @@ This plugin allows you to overlay images of what you expect to the website look 
 3. Give the PSD a name (e.g. Homepage)
 4. Upload a featured image and click publish
 5. Switch the website view and now you should see a \"Toggle PSD\" option in the admin bar
-6. Click on which PSD you want to turn on.
+6. Click on which PSD you want to turn on. 
+
+== Frequently Asked Questions ==
+1. Where is the negative margin being set? It is being set in Javascript. It takes the width of your image, halves it and sets that to the negative margin.
 
 Contributors
 ==================================
 [@salcode](https://github.com/salcode)
-
-
-== Frequently Asked Questions ==
-1. Where is the negative margin being set? It is being set in Javascript. It takes the width of your image, halves it and sets that to the negative margin.
