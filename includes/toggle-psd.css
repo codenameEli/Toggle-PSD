@@ -13,7 +13,6 @@
 }
 
 #wpadminbar #wp-admin-bar-toggle-psd ul li.toggle-psd-item.warning-too-big {
-<<<<<<< HEAD
   -webkit-animation: warnthem 1s ease-in-out;
   animation: warnthem 1s ease-in-out;
 }
@@ -42,9 +41,6 @@
     100% {
       background: transparent;
     }
-=======
-  background: #D84545;
->>>>>>> 89211fcfeedb70fde1ff162991da53222a188eb3
 }
 
 #wpadminbar #wp-admin-bar-toggle-psd ul li.toggle-psd-item > .ab-item.ab-empty-item {
@@ -91,6 +87,12 @@ li.overlay-image img {
   margin-left: -1200px;
 }
 
+@media( max-width:767px ) {
+  #listOfOverlays li img.overlay-active {
+    top: 46px;
+  }
+}
+
 /* Button Settings */
 #wpadminbar #wp-admin-bar-toggle-psd ul li button {
   background: #585858;
@@ -120,4 +122,8 @@ li.overlay-image img {
 #wpadminbar .ab-top-menu>li#wp-admin-bar-toggle-psd.top-level-overlay-active:hover>.ab-item, #wpadminbar .ab-top-menu>li#wp-admin-bar-toggle-psd.top-level-overlay-active:hover >.ab-item:focus {
   background: #399259;
   color: #FFF;
+}
+/* Do not lose the button on mobile view */
+#wpadminbar li#wp-admin-bar-toggle-psd {
+  display: block;
 }
