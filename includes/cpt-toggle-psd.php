@@ -1,6 +1,6 @@
 <?php
 // Register Custom Post Type
-function codenameeli_toggle_psd() {
+function register_toggle_psd_cpt() {
 
     $labels = array(
         'name'                => _x( 'Toggle PSDs', 'Post Type General Name', 'text_domain' ),
@@ -33,11 +33,10 @@ function codenameeli_toggle_psd() {
         'has_archive'         => true,
         'exclude_from_search' => true,
         'publicly_queryable'  => false,
-        // 'capability_type'     => 'post',
     );
     register_post_type( 'toggle_psd', $args );
 
 }
 
 // Hook into the 'init' action
-add_action( 'init', 'codenameeli_toggle_psd', 0 );
+add_action( 'init', 'register_toggle_psd_cpt', 0 );
