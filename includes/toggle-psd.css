@@ -1,129 +1,98 @@
-/* General Bar Settings */
+/* Admin Bar Styles */
 #wpadminbar #wp-admin-bar-toggle-psd ul li.toggle-psd-item {
-  float: left;
-  margin-top: 2px;
+    float: left;
+    margin-top: 2px;
 }
 
 #wpadminbar #wp-admin-bar-toggle-psd ul li.toggle-psd-item:first-child {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 #wpadminbar #wp-admin-bar-toggle-psd ul li.toggle-psd-item:last-child {
-  margin-bottom: 3px;
-}
-
-#wpadminbar #wp-admin-bar-toggle-psd ul li.toggle-psd-item.warning-too-big {
-  -webkit-animation: warnthem 1s ease-in-out;
-  animation: warnthem 1s ease-in-out;
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes warnthem {
-    0% {
-      background: transparent;
-    }
-    50% {
-      background: #E04646;
-    }
-    100% {
-      background: transparent;
-    }
-}
-
-/* Standard syntax */
-@keyframes warnthem {
-    0% {
-      background: transparent;
-    }
-    50% {
-      background: #E04646;
-    }
-    100% {
-      background: transparent;
-    }
+    margin-bottom: 3px;
 }
 
 #wpadminbar #wp-admin-bar-toggle-psd ul li.toggle-psd-item > .ab-item.ab-empty-item {
-  line-height: 34px;
-  text-indent: 5px;
+    line-height: 34px;
+    text-indent: 5px;
 }
 
 #wpadminbar .ab-top-menu>li#wp-admin-bar-toggle-psd .ab-item {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 #wpadminbar #wp-admin-bar-toggle-psd .quicklinks .menupop ul li {
-  float: left;
-  clear: both;
-  margin: 3px 0;
+    float: left;
+    clear: both;
+    margin: 3px 0;
 }
 
-/* Overlay Settings */
-/*.overlay-image .active-overlay {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: .6;
-  margin-top: 32px;
-}*/
-
-li.overlay-image img {
-  display: none;
+#wpadminbar .toggle-psd-overlay {
+    display: none;
 }
 
-#listOfOverlays .overlay-image .inactive-overlay {
-  display: none;
+#wp-admin-bar-toggle-psd.state-active {
+    background: #399259;
 }
 
-#listOfOverlays li img.overlay-active {
-  display: block;
-  position: absolute;
-  left: 50%;
-  top: 32px;
-  z-index: 99999;
-  opacity: 0.6;
-  max-width: none;
-  margin-left: -1200px;
-}
-
-@media( max-width:767px ) {
-  #listOfOverlays li img.overlay-active {
-    top: 46px;
-  }
+#wp-admin-bar-toggle-psd-default .ab-item:before {
+    content: "O";
+    background: #585858;
+    border: 0;
+    margin-left: 5px;
+    border-radius: 10px;
+    width: 35px;
+    float: left;
 }
 
 /* Button Settings */
-#wpadminbar #wp-admin-bar-toggle-psd ul li button {
-  background: #585858;
-  border: 0;
-  margin-left: 5px;
-  border-radius: 10px;
-  width: 35px;
-  float: left;
-}
-
 #wpadminbar #wp-admin-bar-toggle-psd ul li.state-active button{
-  background: #399259;
+    background: #399259;
 }
 
 #wpadminbar #wp-admin-bar-toggle-psd li.toggle-psd-item img {
-  display: none;
+    display: none;
 }
 
 /* Top Level Admin Bar Tab */
-#wp-admin-bar-toggle-psd.top-level-overlay-active {
-  background: #399259;
+#wp-admin-bar-toggle-psd.top-level-state-active {
+    background: #399259;
 }
 
 #wpadminbar .ab-top-menu>li#wp-admin-bar-toggle-psd:hover>.ab-item {
-  color: #399259;
+    color: #399259;
 }
-#wpadminbar .ab-top-menu>li#wp-admin-bar-toggle-psd.top-level-overlay-active:hover>.ab-item, #wpadminbar .ab-top-menu>li#wp-admin-bar-toggle-psd.top-level-overlay-active:hover >.ab-item:focus {
-  background: #399259;
-  color: #FFF;
+#wpadminbar .ab-top-menu>li#wp-admin-bar-toggle-psd.top-level-state-active:hover>.ab-item, #wpadminbar .ab-top-menu>li#wp-admin-bar-toggle-psd.top-level-state-active:hover >.ab-item:focus {
+    background: #399259;
+    color: #FFF;
 }
+
 /* Do not lose the button on mobile view */
 #wpadminbar li#wp-admin-bar-toggle-psd {
-  display: block;
+    display: block;
+}
+
+li.overlay-image img {
+    display: none;
+}
+
+#listOfOverlays .overlay-image .inactive-overlay {
+    display: none;
+}
+
+#listOfOverlays li img.state-active {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 32px;
+    z-index: 99999;
+    opacity: 0.6;
+    max-width: none;
+    margin-left: -1200px;
+}
+
+@media( max-width:767px ) {
+    #listOfOverlays li img.state-active {
+        top: 46px;
+    }
 }
