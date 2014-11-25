@@ -1,0 +1,99 @@
+/* Admin Bar Styles */
+#wpadminbar #wp-admin-bar-toggle-psd ul li.toggle-psd-item {
+    float: left;
+    margin: 5px 0;
+    text-indent: 2px;
+}
+
+#wpadminbar #wp-admin-bar-toggle-psd ul li.toggle-psd-item > .ab-item.ab-empty-item {
+    line-height: 30px;
+    font-size: 14px;
+    text-align: left;
+}
+
+#wp-admin-bar-toggle-psd-default .ab-item:before {
+    content: "O";
+    text-align: center;
+    background: #585858;
+    border: 0;
+    border-radius: 5px;
+    width: 25px;
+    height: 20px;
+    float: left;
+    font-size: 14px;
+    color: #fff!important;
+}
+
+#wpadminbar #wp-admin-bar-toggle-psd ul li.toggle-psd-item.state-active .ab-item:before {
+    background: #399259;
+}
+
+#wpadminbar .ab-top-menu>li#wp-admin-bar-toggle-psd .ab-item {
+    cursor: pointer;
+}
+
+#wpadminbar #wp-admin-bar-toggle-psd .quicklinks .menupop ul li {
+    float: left;
+    clear: both;
+    margin: 3px 0;
+}
+
+#wpadminbar .toggle-psd-overlay {
+    display: none;
+}
+
+#wp-admin-bar-toggle-psd.state-active {
+    background: #399259;
+}
+
+/* Button Settings */
+#wpadminbar #wp-admin-bar-toggle-psd ul li.state-active button{
+    background: #399259;
+}
+
+#wpadminbar #wp-admin-bar-toggle-psd li.toggle-psd-item img {
+    display: none;
+}
+
+/* Top Level Admin Bar Tab */
+#wp-admin-bar-toggle-psd.top-level-state-active {
+    background: #399259;
+}
+
+#wpadminbar .ab-top-menu>li#wp-admin-bar-toggle-psd:hover>.ab-item {
+    color: #399259;
+}
+#wpadminbar .ab-top-menu>li#wp-admin-bar-toggle-psd.top-level-state-active:hover>.ab-item, #wpadminbar .ab-top-menu>li#wp-admin-bar-toggle-psd.top-level-state-active:hover >.ab-item:focus {
+    background: #399259;
+    color: #FFF;
+}
+
+/* Do not lose the button on mobile view */
+#wpadminbar li#wp-admin-bar-toggle-psd {
+    display: block;
+}
+
+li.overlay-image img {
+    display: none;
+}
+
+#listOfOverlays .overlay-image .inactive-overlay {
+    display: none;
+}
+
+#listOfOverlays li img.state-active {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 32px;
+    z-index: 99999;
+    opacity: 0.6;
+    max-width: none;
+    margin-left: -1200px;
+}
+
+@media( max-width:767px ) {
+    #listOfOverlays li img.state-active {
+        top: 46px;
+    }
+}
