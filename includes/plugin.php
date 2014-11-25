@@ -75,7 +75,7 @@ function toggle_psd_overlay() {
 };
 
 function load_toggle_psd_files() {
-	add_action( 'wp_before_admin_bar_render', 'my_tweaked_admin_bar' ); 
+	add_action( 'wp_before_admin_bar_render', 'my_tweaked_admin_bar' );
 	wp_enqueue_style( 'toggle-psd', plugins_url('toggle-psd.css', __FILE__, false) );
-	wp_enqueue_script( 'toggle-psd-js', plugins_url('javascript.js', __FILE__) );
+	wp_enqueue_script( 'toggle-psd-js', plugins_url('javascript.js', __FILE__), array( 'jquery' ) );
 }
