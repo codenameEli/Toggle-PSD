@@ -28,7 +28,7 @@ function get_all_psds() {
         // Get the overlay to put in the list
         $thumbnail = get_the_post_thumbnail( $post->ID );
         $attr = array(
-            'class' => 'wp-admin-bar-toggle-psd-' . $count,
+            'class' => 'state-hidden wp-admin-bar-toggle-psd-' . $count,
             'title' => '',
         );
 
@@ -51,7 +51,9 @@ function get_all_psds() {
             'parent'=> 'toggle-psd',
             'meta'      => array(
                 'class'     => 'toggle-psd-item state-hidden',
-                'html'      => '<img class="state-hidden toggle-psd-overlay toggle-psd-overlay-' . $count . '"' . 'data-psd-number="' . $count . '"src="' . $link . '">',
+                'html'      => '
+                    <img class="state-hidden toggle-psd-overlay toggle-psd-overlay-' . $count . '"' . 'data-psd-number="' . $count . '"src="' . $link . '">'
+                ,
             ),
     ));
 
@@ -71,7 +73,10 @@ function add_toggle_psd_admin_bar() {
     $args = array(
         'id'    => 'toggle-psd',
         'title' => 'Toggle PSD',
-        'href'  => ''
+        'href'  => '',
+        'meta'  => array(
+            'class' => 'state-hidden'
+        ),
     );
 
     $wp_admin_bar->add_menu( $args );
