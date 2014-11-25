@@ -1,6 +1,6 @@
 <?php
 //Loads the Overlay
-add_action('genesis_after', 'toggle_psd_overlay');
+add_action( 'wp_footer', 'toggle_psd_overlay' );
 
 function get_all_psds() {
 	global $post;
