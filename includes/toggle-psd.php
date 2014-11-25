@@ -4,9 +4,9 @@ add_action( 'wp_enqueue_scripts', 'load_toggle_psd_assets' );
 // Adds the admin bar
 add_action( 'wp_before_admin_bar_render', 'add_toggle_psd_admin_bar' );
 //Loads the Overlay
-add_action( 'wp_footer', 'get_all_psds' );
+add_action( 'wp_footer', 'get_toggle_psds' );
 
-function get_all_psds() {
+function get_toggle_psds() {
     global $post;
     global $wp_admin_bar;
 
@@ -16,7 +16,7 @@ function get_all_psds() {
         'posts_per_page' => 99
     );
 
-    $custom_query = LDM_Utils::get_transient( 'toggle-psd-overlays', $query_args );
+    $custom_query = Toggle_PSD_Utils::get_transient( 'toggle-psd-overlays', $query_args );
     $count = 0;
 
     $output = '<ul id="listOfOverlays">';
@@ -55,9 +55,10 @@ function get_all_psds() {
                     <img class="state-hidden toggle-psd-overlay toggle-psd-overlay-' . $count . '"' . 'data-psd-number="' . $count . '"src="' . $link . '">'
                 ,
             ),
-    ));
+        ));
 
-    $count++;
+        $count++;
+
     endwhile;
     wp_reset_query();
 

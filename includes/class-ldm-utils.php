@@ -1,8 +1,8 @@
 <?php
 
-if( ! class_exists('LDM_Utils') ){
+if( ! class_exists('Toggle_PSD_Utils') ){
 
-    class LDM_Utils {
+    class Toggle_PSD_Utils {
 
         public static function parse_link( $link ){
 

@@ -1,20 +1,31 @@
 /* Admin Bar Styles */
 #wpadminbar #wp-admin-bar-toggle-psd ul li.toggle-psd-item {
     float: left;
-    margin-top: 2px;
-}
-
-#wpadminbar #wp-admin-bar-toggle-psd ul li.toggle-psd-item:first-child {
-    margin-top: 0;
-}
-
-#wpadminbar #wp-admin-bar-toggle-psd ul li.toggle-psd-item:last-child {
-    margin-bottom: 3px;
+    margin: 5px 0;
+    text-indent: 2px;
 }
 
 #wpadminbar #wp-admin-bar-toggle-psd ul li.toggle-psd-item > .ab-item.ab-empty-item {
-    line-height: 34px;
-    text-indent: 5px;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: left;
+}
+
+#wp-admin-bar-toggle-psd-default .ab-item:before {
+    content: "O";
+    text-align: center;
+    background: #585858;
+    border: 0;
+    border-radius: 5px;
+    width: 25px;
+    height: 20px;
+    float: left;
+    font-size: 14px;
+    color: #fff!important;
+}
+
+#wpadminbar #wp-admin-bar-toggle-psd ul li.toggle-psd-item.state-active .ab-item:before {
+    background: #399259;
 }
 
 #wpadminbar .ab-top-menu>li#wp-admin-bar-toggle-psd .ab-item {
@@ -33,16 +44,6 @@
 
 #wp-admin-bar-toggle-psd.state-active {
     background: #399259;
-}
-
-#wp-admin-bar-toggle-psd-default .ab-item:before {
-    content: "O";
-    background: #585858;
-    border: 0;
-    margin-left: 5px;
-    border-radius: 10px;
-    width: 35px;
-    float: left;
 }
 
 /* Button Settings */
