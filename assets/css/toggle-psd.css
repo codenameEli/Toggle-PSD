@@ -17,10 +17,10 @@
     background: #585858;
     border: 0;
     border-radius: 5px;
-    width: 25px;
+    width: 30px;
     height: 20px;
     float: left;
-    font-size: 14px;
+    font-size: 16px;
     color: #fff!important;
 }
 
@@ -30,6 +30,10 @@
 
 #wpadminbar .ab-top-menu>li#wp-admin-bar-toggle-psd .ab-item {
     cursor: pointer;
+}
+
+#wpadminbar .ab-top-menu>li>.ab-item:focus {
+    color: #399259;
 }
 
 #wpadminbar #wp-admin-bar-toggle-psd .quicklinks .menupop ul li {
@@ -75,6 +79,16 @@
 
 li.overlay-image img {
     display: none;
+}
+
+#listOfOverlays, .overlay-image {
+    height: 0;
+    width: 0;
+    margin: 0;
+}
+
+#listOfOverlays {
+    margin-top: -18px;
 }
 
 #listOfOverlays .overlay-image .inactive-overlay {
