@@ -1,0 +1,12 @@
+# ignore all files starting with .
+\.*
+# include .gitignore (i.e. do NOT ignore)
+!.gitignore
+# ignore all files that start with ~
+~*
+
+# ignore node/grunt dependencies
+node_modules/
+
+# ignore sublime project files
+*.sublime-workspace
