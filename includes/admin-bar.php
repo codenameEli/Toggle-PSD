@@ -12,9 +12,46 @@ function add_toggle_psd_admin_bar() {
         'title' => 'Toggle PSD',
         'href'  => '',
         'meta'  => array(
-            'class' => 'state-hidden'
+            // 'class' => 'state-hidden'
         ),
     );
 
-    $wp_admin_bar->add_menu( $args );
+    $wp_admin_bar->add_node( $args );
+
+    add_toggle_psd_admin_bar_subnodes();
+}
+
+function add_toggle_psd_admin_bar_subnodes() {
+
+    global $wp_admin_bar;
+    global $post;
+
+    $custom_query = Toggle_PSD::get_psds();
+    $count = 0;
+
+    while( $custom_query->have_posts() ) :
+
+        $custom_query -> the_post();
+
+        $title = get_the_title( $post->ID );
+
+        $args =  array(
+            'id'    => 'toggle-psd-' . $count,
+            'title' => $title,
+            'href'  => '',
+            'parent'=> 'toggle-psd',
+            'meta'      => array(
+                'class'     => 'toggle-psd-node-container',
+                'html'      => '
+                    <div class="toggle-psd-node location-admin-bar" data-state="hidden" data-node-id="' . $count . '"></div>'
+                ,
+            ),
+        );
+
+        $wp_admin_bar->add_node( $args );
+
+        $count++;
+
+    endwhile;
+    wp_reset_query();
 }
