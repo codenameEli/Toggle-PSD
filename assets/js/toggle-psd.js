@@ -1,51 +1,80 @@
 jQuery(document).ready(function($) {
 
-    $.fn.turnOff = function() {
+    var getShownNodeId = function() {
 
-        return $(this).removeClass('state-active').addClass('state-hidden');
+        return $('.toggle-psd-node[data-state="shown"]').attr( 'data-node-id' );
     }
 
-    $.fn.positionOverlay = function() {
+    var turnOffAllNodes = function() {
 
-        var overlay = $(this).find('img'),
-            overlayWidth = $(overlay).attr('width'),
-            position = '-' + ( overlayWidth / 2 ) + 'px';
+        return $('.toggle-psd-node').turnOff();
+    }
 
-        return $(overlay).css( 'margin-left', position );
-    };
+    $.fn.getNodeId = function() {
+
+        return $(this).attr('data-node-id');
+    }
+
+    $.fn.turnOff = function() {
+
+        return this.each(function() {
+
+            $(this).attr( 'data-state', 'hidden' );
+        });
+    }
+
+    $.fn.turnOn = function() {
+
+        return $(this).attr( 'data-state', 'shown' );
+    }
+
+    $.fn.positionNode = function() {
+
+        var nodeWidth = $(this).find('.toggle-psd-overlay-image').attr('width'),
+            nodePosition = '-' + ( nodeWidth / 2 ) + 'px';
+
+        return $(this).css( 'margin-left', nodePosition );
+    }
 
     $.fn.toggleState = function() {
 
-        return $(this).toggleClass('state-active').toggleClass('state-hidden');
-    };
+        var state = $(this).attr( 'data-state' );
 
-    // Find the data number of each admin bar
-    $.fn.toggleDisplay = function() {
+        switch ( state ) {
 
-        var adminBarItem = $(this),
-            imageNumber = adminBarItem.find('.toggle-psd-overlay').data('psd-number');
+            case 'hidden' :
+                return $(this).turnOn();
+                break;
 
-        $('#listOfOverlays .overlay-image').each(function(){
+            case 'shown' :
+                return $(this).turnOff();
+                break;
 
-            var overlayNumber = $(this).data('psd-number');
+            default :
+                break;
+        }
+    }
 
-            if ( overlayNumber !== imageNumber ) {
+    $.fn.togglePSD = function() {
 
-                $(this).children().turnOff();
-                return;
-            }
+        var nodeId = $(this).getNodeId(),
+            currentNodeId = getShownNodeId(),
+            footerNodeSelector = '#footer-toggle-psd-default .toggle-psd-node[data-node-id="' + nodeId + '"]';
 
-            // Toggle state on
-            adminBarItem.toggleState();
-            $(this).positionOverlay().toggleState();
+        if ( undefined !== currentNodeId && currentNodeId == nodeId ) {
 
-        });
-    };
+            $(this).turnOff();
+            $(footerNodeSelector).turnOff();
+            return;
+        }
 
-    var $adminBar = $('#wp-admin-bar-toggle-psd');
+        turnOffAllNodes();
+        $(this).toggleState();
+        $(footerNodeSelector).toggleState().positionNode();
+    }
 
-    $adminBar.on( 'click', '.toggle-psd-item', function() {
+    $('#wp-admin-bar-toggle-psd-default').on( 'click', '.toggle-psd-node', function() {
 
-        return $(this).toggleDisplay();
+        $(this).togglePSD();
     });
 });
