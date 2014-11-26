@@ -1,110 +1,89 @@
-/*Admin Bar Styles*/
-#wpadminbar #wp-admin-bar-toggle-psd ul li.toggle-psd-item {
-    float: left;
-    margin: 5px 0;
-    text-indent: 2px;
-}
-
-#wpadminbar #wp-admin-bar-toggle-psd ul li.toggle-psd-item > .ab-item.ab-empty-item {
-    line-height: 30px;
-    font-size: 14px;
-    text-align: left;
-}
-
-#wp-admin-bar-toggle-psd-default .ab-item:before {
-    content: "O";
-    text-align: center;
-    background: #585858;
-    border: 0;
-    border-radius: 5px;
-    width: 30px;
-    height: 20px;
-    float: left;
-    font-size: 16px;
-    color: #fff!important;
-}
-
-#wpadminbar #wp-admin-bar-toggle-psd ul li.toggle-psd-item.state-active .ab-item:before {
-    background: #399259;
-}
-
-#wpadminbar .ab-top-menu>li#wp-admin-bar-toggle-psd .ab-item {
-    cursor: pointer;
-}
-
-#wpadminbar .ab-top-menu>li>.ab-item:focus {
-    color: #399259;
-}
-
-#wpadminbar #wp-admin-bar-toggle-psd .quicklinks .menupop ul li {
-    float: left;
-    clear: both;
-    margin: 3px 0;
-}
-
-#wpadminbar .toggle-psd-overlay {
-    display: none;
-}
-
-#wp-admin-bar-toggle-psd.state-active {
-    background: #399259;
-}
-
-#wpadminbar #wp-admin-bar-toggle-psd ul li.state-active button{
-    background: #399259;
-}
-
-#wpadminbar #wp-admin-bar-toggle-psd li.toggle-psd-item img {
-    display: none;
-}
-
-#wp-admin-bar-toggle-psd.top-level-state-active {
-    background: #399259;
-}
-
-#wpadminbar .ab-top-menu>li#wp-admin-bar-toggle-psd:hover>.ab-item {
-    color: #399259;
-}
-#wpadminbar .ab-top-menu>li#wp-admin-bar-toggle-psd.top-level-state-active:hover>.ab-item, #wpadminbar .ab-top-menu>li#wp-admin-bar-toggle-psd.top-level-state-active:hover >.ab-item:focus {
-    background: #399259;
+// Admin Bar
+#wp-admin-bar-toggle-psd {
     color: #FFF;
+
+    > .ab-item {
+        cursor: pointer;
+        &:before {
+            content: "Ps";
+            font-size: 12px;
+            font-weight: 600;
+            border: 1px solid #AAA;
+            height: 10px;
+            width: 20px;
+            margin: 6px 6px 6px 0;
+            display: inline-block;
+            text-align: center;
+            line-height: 8px;
+        }
+    }
 }
 
-#wpadminbar li#wp-admin-bar-toggle-psd {
-    display: block;
+#wp-admin-bar-toggle-psd-default {
+
+    .toggle-psd-node-container {
+        position: relative;
+    }
+
+    .ab-item {
+        text-indent: 28px;
+    }
+
+    .toggle-psd-node {
+        position: absolute;
+        width: 100%;
+        height: 26px;
+        top: 0;
+        left: 0;
+        z-index: 101;
+        cursor: pointer;
+        &:before {
+            content: "";
+            display: block;
+            margin: 8px 0 0 15px;
+            height: 10px;
+            width: 10px;
+            background-color: green;
+            border-radius: 100%;
+        }
+    }
+
+    .toggle-psd-node[data-state="hidden"] {
+        &:before {
+            background-color: #AAA;
+        }
+    }
+
+    .toggle-psd-node[data-state="shown"] {
+        &:before {
+            background-color: #B2BB1C;
+        }
+    }
 }
 
-li.overlay-image img {
-    display: none;
-}
-
-#listOfOverlays, .overlay-image {
+// Footer
+#footer-toggle-psd-default {
+    margin: 0;
     height: 0;
     width: 0;
-    margin: 0;
-}
 
-#listOfOverlays {
-    margin-top: -18px;
-}
+    .toggle-psd-node-container {
+        margin: 0;
+        height: 0;
+        width: 0;
+    }
 
-#listOfOverlays .overlay-image .inactive-overlay {
-    display: none;
-}
+    .toggle-psd-node[data-state="hidden"] {
+        display: none;
+    }
 
-#listOfOverlays li img.state-active {
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: 32px;
-    z-index: 99999;
-    opacity: 0.6;
-    max-width: none;
-    margin-left: -1200px;
-}
-
-@media( max-width:767px ) {
-    #listOfOverlays li img.state-active {
-        top: 46px;
+    .toggle-psd-node[data-state="shown"] {
+        display: block;
+        position: absolute;
+        top: 32px; // Account for the WP admin bar
+        left: 50%;
+        z-index: 99999;
+        opacity: 0.6;
+        min-width: 100%;
     }
 }
