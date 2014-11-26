@@ -1,4 +1,4 @@
-/* Admin Bar Styles */
+/*Admin Bar Styles*/
 #wpadminbar #wp-admin-bar-toggle-psd ul li.toggle-psd-item {
     float: left;
     margin: 5px 0;
@@ -50,7 +50,6 @@
     background: #399259;
 }
 
-/* Button Settings */
 #wpadminbar #wp-admin-bar-toggle-psd ul li.state-active button{
     background: #399259;
 }
@@ -59,7 +58,6 @@
     display: none;
 }
 
-/* Top Level Admin Bar Tab */
 #wp-admin-bar-toggle-psd.top-level-state-active {
     background: #399259;
 }
@@ -72,7 +70,6 @@
     color: #FFF;
 }
 
-/* Do not lose the button on mobile view */
 #wpadminbar li#wp-admin-bar-toggle-psd {
     display: block;
 }

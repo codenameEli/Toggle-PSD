@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
             overlayWidth = $(overlay).attr('width'),
             position = '-' + ( overlayWidth / 2 ) + 'px';
 
-        return $(overlay).css( 'margin-left', position ).toggleState();
+        return $(overlay).css( 'margin-left', position );
     };
 
     $.fn.toggleState = function() {
@@ -20,9 +20,10 @@ jQuery(document).ready(function($) {
     };
 
     // Find the data number of each admin bar
-    $.fn.displayOverlay = function() {
+    $.fn.toggleDisplay = function() {
 
-        var imageNumber = $(this).find('.toggle-psd-overlay').data('psd-number');
+        var adminBarItem = $(this),
+            imageNumber = adminBarItem.find('.toggle-psd-overlay').data('psd-number');
 
         $('#listOfOverlays .overlay-image').each(function(){
 
@@ -34,7 +35,9 @@ jQuery(document).ready(function($) {
                 return;
             }
 
-            $(this).positionOverlay();
+            // Toggle state on
+            adminBarItem.toggleState();
+            $(this).positionOverlay().toggleState();
 
         });
     };
@@ -43,6 +46,6 @@ jQuery(document).ready(function($) {
 
     $adminBar.on( 'click', '.toggle-psd-item', function() {
 
-        return $(this).toggleState().displayOverlay();
+        return $(this).toggleDisplay();
     });
 });
