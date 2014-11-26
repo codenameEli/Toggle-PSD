@@ -48,11 +48,11 @@ var build_state = 'prod',
     watched_sass_files = [ 'assets/css/sass/**/*.scss' ],
     uglify_files = {
         'assets/js/toggle-psd.min.js': [
-            'assets/js/*.js',
+            'assets/js/toggle-psd.js',
         ]
     },
     watched_js_files = [
-        'assets/js/*.js',
+        'assets/js/toggle-psd.js',
     ];
 
 module.exports = function(grunt) {
