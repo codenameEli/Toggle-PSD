@@ -10,6 +10,25 @@ jQuery(document).ready(function($) {
         return $('.toggle-psd-node').turnOff();
     }
 
+    $.fn.checkAdminBarNodesForState = function() {
+
+        return this.each(function() {
+
+            var state = $(this).attr( 'data-state' );
+
+            switch ( state ) {
+
+                case 'shown' :
+                    return 'true';
+                    break;
+
+                default :
+                    return 'false';
+                    break;
+            }
+        });
+    }
+
     $.fn.getNodeId = function() {
 
         return $(this).attr('data-node-id');
@@ -71,6 +90,21 @@ jQuery(document).ready(function($) {
         turnOffAllNodes();
         $(this).toggleState();
         $(footerNodeSelector).toggleState().positionNode();
+
+
+        $('body').on( 'keypress', function( event ) {
+
+            var currentNodeId = getShownNodeId(),
+                footerNodeSelector = '#footer-toggle-psd-default .toggle-psd-node[data-node-id="' + nodeId + '"]';
+
+            // `\~ is charCode 96
+            if ( undefined !== currentNodeId && event.charCode === 96 ) {
+
+                $(footerNodeSelector).toggleState().positionNode();
+            }
+        });
+
+
     }
 
     $('#wp-admin-bar-toggle-psd-default').on( 'click', '.toggle-psd-node', function() {
