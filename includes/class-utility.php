@@ -1,5 +1,7 @@
 <?php
 
+add_action( 'save_post', array( 'Toggle_PSD_Utils', 'update_transient' ) );
+
 if( ! class_exists('Toggle_PSD_Utils') ){
 
     class Toggle_PSD_Utils {
@@ -64,25 +66,14 @@ if( ! class_exists('Toggle_PSD_Utils') ){
             return $the_transient;
         }
 
-        //     public static function update_transient( $transient_name, $post_type ){
+        public static function update_transient( $post_id ) {
 
-        //       $function_name = $transient_name . '_clear_transient';
-        //       // Adding an action inside of a class might not be best practice
-        //       // But am going to assume it is edit_post
-        //       add_action( 'edit_post', $function_name );
+            if ( 'toggle_psd' !== get_post_type( $post_id ) ) {
 
-        //       global $post;
+                return;
+            }
 
-        //       function $function_name( $post->ID ) {
-
-        //         if ( $post_type !== get_post_type( $post->ID ) ) {
-
-        //           return;
-        //         }
-
-        //         delete_transient( 'hero-slideshow' );
-        //       }
-        //     }
-        // }
+            delete_transient( 'toggle-psd-overlays' );
+        }
     }
 }
