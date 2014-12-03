@@ -1,6 +1,13 @@
 <?php
 // Adds the admin bar
-add_action( 'wp_before_admin_bar_render', 'add_toggle_psd_admin_bar' );
+// Only on the front end
+// There is an issue with when you try to create a new post
+// It will automatically fill in the post/page content with a Toggle PSD
+// This is a patch
+if ( !is_admin() ) {
+
+    add_action( 'wp_before_admin_bar_render', 'add_toggle_psd_admin_bar' );
+}
 
 function add_toggle_psd_admin_bar() {
 
