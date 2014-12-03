@@ -1,18 +1,32 @@
 #wp-admin-bar-toggle-psd {
-  color: #FFF; }
+  color: #6D6E71; }
+  #wp-admin-bar-toggle-psd:hover > .ab-item {
+    color: #6D6E71 !important; }
+    #wp-admin-bar-toggle-psd:hover > .ab-item:before {
+      color: #6D6E71 !important; }
   #wp-admin-bar-toggle-psd > .ab-item {
     cursor: pointer; }
     #wp-admin-bar-toggle-psd > .ab-item:before {
       content: "Ps";
+      color: #6D6E71;
       font-size: 12px;
       font-weight: 600;
-      border: 1px solid #AAA;
+      border: 1px solid #6D6E71;
       height: 10px;
       width: 20px;
       margin: 6px 6px 6px 0;
       display: inline-block;
       text-align: center;
       line-height: 8px; }
+  #wp-admin-bar-toggle-psd.menupop {
+    color: #EEE; }
+    #wp-admin-bar-toggle-psd.menupop:hover > .ab-item {
+      color: #2EA2CC !important; }
+      #wp-admin-bar-toggle-psd.menupop:hover > .ab-item:before {
+        color: #AAA !important; }
+    #wp-admin-bar-toggle-psd.menupop > .ab-item:before {
+      color: #AAA;
+      border: 1px solid #AAA; }
 
 #wp-admin-bar-toggle-psd-default .toggle-psd-node-container {
   position: relative; }
@@ -32,7 +46,6 @@
     margin: 8px 0 0 15px;
     height: 10px;
     width: 10px;
-    background-color: green;
     border-radius: 100%; }
 #wp-admin-bar-toggle-psd-default .toggle-psd-node[data-state="hidden"]:before {
   background-color: #AAA; }
