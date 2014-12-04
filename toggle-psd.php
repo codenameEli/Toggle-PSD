@@ -1,14 +1,13 @@
 <?php
 /*
 Plugin Name: Toggle PSD
-Plugin URI: https://github.com/codenameEli
+Plugin URI: https://github.com/codenameEli/Toggle-PSD
 Description: A developer-friendly guide to help your site match the design comps.
 Author: Tim "Eli" Dalbey
 Version: 1.0
-Plugin URI: https://github.com/codenameEli
 */
 
-/*  Copyright 2014  Tim "Eli" Dalbey  (email : timdalbey13@gmail.com)
+/*  Copyright 2014  Tim "Eli" Dalbey  (email : eli@launchdm.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as
