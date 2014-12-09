@@ -7,8 +7,6 @@ Stable tag: trunk
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-~Current Version:1.1~
-
 This plugin allows you to overlay images of what you expect to the website look like (hopefully) when it is finished. It helps as a bridge between design and development.
 
 Description

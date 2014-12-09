@@ -4,7 +4,7 @@ Plugin Name: Toggle PSD
 Plugin URI: https://github.com/codenameEli/Toggle-PSD
 Description: A developer-friendly guide to help your site match the design comps.
 Author: Tim "Eli" Dalbey
-Version: 1.1
+Version: 1.2
 */
 
 /*  Copyright 2014  Tim "Eli" Dalbey  (email : eli@launchdm.com)
