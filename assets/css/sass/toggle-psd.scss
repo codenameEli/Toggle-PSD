@@ -101,6 +101,10 @@
         margin: 0;
         height: 0;
         width: 0;
+
+        img {
+            width: auto;
+        }
     }
 
     .toggle-psd-node[data-state="hidden"] {

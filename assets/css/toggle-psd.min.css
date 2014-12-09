@@ -60,6 +60,8 @@
     margin: 0;
     height: 0;
     width: 0; }
+    #footer-toggle-psd-default .toggle-psd-node-container img {
+      width: auto; }
   #footer-toggle-psd-default .toggle-psd-node[data-state="hidden"] {
     display: none; }
   #footer-toggle-psd-default .toggle-psd-node[data-state="shown"] {
