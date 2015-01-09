@@ -55,7 +55,8 @@
 #footer-toggle-psd-default {
   margin: 0;
   height: 0;
-  width: 0; }
+  width: 0;
+  list-style: none; }
   #footer-toggle-psd-default .toggle-psd-node-container {
     margin: 0;
     height: 0;
