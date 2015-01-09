@@ -1,6 +1,6 @@
 {
     "name": "toggle-psd",
-    "version": "1.0.0",
+    "version": "1.2.1",
     "description": "Overlay comps of websites in development",
     "devDependencies": {
         "grunt": "~0.4.5",
