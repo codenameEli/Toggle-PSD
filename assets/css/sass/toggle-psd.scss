@@ -54,6 +54,11 @@
 
     .toggle-psd-node-container {
         position: relative;
+        &:hover {
+            .ab-item {
+                color: #B2BB1C;
+            }
+        }
     }
 
     .ab-item {

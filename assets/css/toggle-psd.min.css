@@ -30,6 +30,8 @@
 
 #wp-admin-bar-toggle-psd-default .toggle-psd-node-container {
   position: relative; }
+  #wp-admin-bar-toggle-psd-default .toggle-psd-node-container:hover .ab-item {
+    color: #B2BB1C; }
 #wp-admin-bar-toggle-psd-default .ab-item {
   text-indent: 28px; }
 #wp-admin-bar-toggle-psd-default .toggle-psd-node {
