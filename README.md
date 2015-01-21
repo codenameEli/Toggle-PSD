@@ -28,4 +28,5 @@ Frequently Asked Questions
 
 Contributors
 ----------------------------------
-[@salcode](https://github.com/salcode)
+[@codenameEli](https://github.com/codenameEli),
+[@salcode](https://github.com/salcode),
