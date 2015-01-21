@@ -16,10 +16,10 @@ This plugin allows you to overlay images of what you expect to the website look 
 Installation
 ----------------------------------
 1. Install the plugin
-2. Click on the \"Toggle PSD\" admin menu option
+2. Click on the "Toggle PSD" admin menu option
 3. Give the PSD a name (e.g. Homepage)
 4. Upload a featured image and click publish
-5. Switch the website view and now you should see a \"Toggle PSD\" option in the admin bar
+5. Switch the website view and now you should see a "Toggle PSD" option in the admin bar
 6. Click on which PSD you want to turn on.
 
 Frequently Asked Questions
