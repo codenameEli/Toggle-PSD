@@ -31,3 +31,5 @@ Contributors
 ----------------------------------
 [@codenameEli](https://github.com/codenameEli),
 [@salcode](https://github.com/salcode),
+[@dustyndoyle](https://github.com/dustyndoyle),
+[@tbcorr](https://github.com/tbcorr),
