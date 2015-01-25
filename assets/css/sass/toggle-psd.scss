@@ -11,6 +11,16 @@
         }
     }
 
+    &[data-state="hidden"] {
+        background-color: initial;
+    }
+
+    &[data-state="shown"] {
+        > .ab-item {
+            background-color: #B2BB1C;
+        }
+    }
+
     > .ab-item {
         cursor: pointer;
         &:before {
@@ -53,7 +63,7 @@
 #wp-admin-bar-toggle-psd-default {
 
     .toggle-psd-node-container {
-        position: relative;
+        // position: relative;
     }
 
     .ab-item {
@@ -82,6 +92,10 @@
         &:before {
             background-color: #AAA;
         }
+
+        img {
+            display: none;
+        }
     }
 
     .toggle-psd-node[data-state="shown"] {
@@ -91,34 +105,45 @@
     }
 }
 
-// Footer
-#footer-toggle-psd-default {
-    margin: 0;
-    height: 0;
-    width: 0;
-    list-style: none;
-
-    .toggle-psd-node-container {
-        margin: 0;
-        height: 0;
-        width: 0;
-
-        img {
-            width: auto;
-        }
-    }
-
-    .toggle-psd-node[data-state="hidden"] {
-        display: none;
-    }
-
-    .toggle-psd-node[data-state="shown"] {
-        display: block;
-        position: absolute;
-        top: 32px; // Account for the WP admin bar
-        left: 50%;
-        z-index: 99999;
-        opacity: 0.6;
-        min-width: 100%;
-    }
+.overlay {
+    display: block;
+    position: absolute;
+    z-index: 99;
+    top: 32px; // Account for the WP admin bar
+    left: 50%;
+    opacity: 0.6;
+    min-width: 100%;
 }
+
+
+// // Footer
+// #footer-toggle-psd-default {
+//     margin: 0;
+//     height: 0;
+//     width: 0;
+//     list-style: none;
+
+//     .toggle-psd-node-container {
+//         margin: 0;
+//         height: 0;
+//         width: 0;
+
+//         img {
+//             width: auto;
+//         }
+//     }
+
+//     .toggle-psd-node[data-state="hidden"] {
+//         display: none;
+//     }
+
+//     .toggle-psd-node[data-state="shown"] {
+//         display: block;
+//         position: absolute;
+//         top: 32px; // Account for the WP admin bar
+//         left: 50%;
+//         z-index: 99999;
+//         opacity: 0.6;
+//         min-width: 100%;
+//     }
+// }

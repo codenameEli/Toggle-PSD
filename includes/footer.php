@@ -34,5 +34,5 @@ function append_toggle_psd_overlay_images() {
     wp_reset_query();
 
     $output .= '</ul>';
-    echo $output;
+    // echo $output;
 }

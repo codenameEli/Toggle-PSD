@@ -41,6 +41,8 @@ function add_toggle_psd_admin_bar_subnodes() {
         $custom_query -> the_post();
 
         $title = get_the_title( $post->ID );
+        $overlay_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+        $html = '<div class="toggle-psd-node location-admin-bar" data-state="hidden" data-node-id="' . $count . '" data-image-source="' . $overlay_url . '">' .'</div>';
 
         $args =  array(
             'id'    => 'toggle-psd-' . $count,
@@ -49,9 +51,7 @@ function add_toggle_psd_admin_bar_subnodes() {
             'parent'=> 'toggle-psd',
             'meta'      => array(
                 'class'     => 'toggle-psd-node-container',
-                'html'      => '
-                    <div class="toggle-psd-node location-admin-bar" data-state="hidden" data-node-id="' . $count . '"></div>'
-                ,
+                'html'      => $html
             ),
         );
 
