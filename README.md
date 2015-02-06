@@ -1,13 +1,11 @@
 Toggle PSD
 ==================================
-Tags: toggle,psd,overlay,design,developer
+Tags: toggle,psd,overlay,design,developer, wordpress
 Requires at least: 1.0
 Tested up to: 1.0
 Stable tag: trunk
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-
-This plugin allows you to overlay images of what you expect to the website look like (hopefully) when it is finished. It helps as a bridge between design and development.
 
 Description
 ==================================
@@ -29,3 +27,5 @@ Frequently Asked Questions
 Contributors
 ==================================
 [@salcode](https://github.com/salcode)
+[@tbcorr](https://github.com/tbcorr)
+[@dustyndoyle](https://github.com/dustyndoyle)
