@@ -11,6 +11,42 @@
         }
     }
 
+    &[data-state="hidden"] {
+        background-color: initial;
+    }
+
+    &[data-state="shown"] {
+        &.menupop {
+            &:hover, &:focus {
+                > .ab-item {
+                    color: #B2BB1C!important;
+                    &:before {
+                        color: #FFF!important;
+                        border: 1px solid #AAA;
+                    }
+                    &:focus {
+                        color: #FFF!important;
+                    }
+                }
+            }
+        }
+        &.menupop.hover {
+            > .ab-item {
+                &:before {
+                    color: #FFF!important;
+                    background-color: #B2BB1C;
+                }
+            }
+        }
+        > .ab-item {
+            &:before {
+                background-color: #B2BB1C;
+                color: #FFF!important;
+                border: 1px solid #FFF;
+            }
+        }
+    }
+
     > .ab-item {
         cursor: pointer;
         &:before {
@@ -31,10 +67,25 @@
     // Has PSDs in the dropdown - Active State
     &.menupop {
         color: #EEE;
-        &:hover {
+        &:hover, &:focus {
 
             > .ab-item {
-                color: #2EA2CC!important;
+                color: #B2BB1C!important;
+                &:before {
+                    color: #AAA!important;
+                    border: 1px solid #AAA;
+                }
+                &:focus {
+                    color: #AAA!important;
+                }
+            }
+        }
+
+        &.hover {
+            color: #B2BB1C!important;
+
+            > .ab-item {
+                color: #B2BB1C!important;
                 &:before {
                     color: #AAA!important;
                 }
@@ -87,6 +138,10 @@
         &:before {
             background-color: #AAA;
         }
+
+        img {
+            display: none;
+        }
     }
 
     .toggle-psd-node[data-state="shown"] {
@@ -96,34 +151,11 @@
     }
 }
 
-// Footer
-#footer-toggle-psd-default {
-    margin: 0;
-    height: 0;
-    width: 0;
-    list-style: none;
-
-    .toggle-psd-node-container {
-        margin: 0;
-        height: 0;
-        width: 0;
-
-        img {
-            width: auto;
-        }
-    }
-
-    .toggle-psd-node[data-state="hidden"] {
-        display: none;
-    }
-
-    .toggle-psd-node[data-state="shown"] {
-        display: block;
-        position: absolute;
-        top: 32px; // Account for the WP admin bar
-        left: 50%;
-        z-index: 99999;
-        opacity: 0.6;
-        min-width: 100%;
-    }
+.overlay {
+    display: block;
+    position: absolute!important;
+    z-index: 99;
+    top: 32px; // Account for the WP admin bar
+    left: 50%;
+    opacity: 0.6;
 }

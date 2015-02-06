@@ -37,7 +37,7 @@ sudo gem install sass
     // this value will be used for both the
     // initial process when `grunt` alone is run
     // as well as the tasks run via watch
-var build_state = 'prod',
+var build_state = 'dev',
     // sass src files are loaded with sass includes
     // no need to list them here (i.e. only one sass src)
     sass_files = {
@@ -48,11 +48,19 @@ var build_state = 'prod',
     watched_sass_files = [ 'assets/css/sass/**/*.scss' ],
     uglify_files = {
         'assets/js/toggle-psd.min.js': [
-            'assets/js/toggle-psd.js',
+            'assets/js/setup.js',
+            'assets/js/models/*.js',
+            'assets/js/views/*.js',
+            'assets/js/collections/*.js',
+            'assets/js/ready.js',
         ]
     },
     watched_js_files = [
-        'assets/js/toggle-psd.js',
+        'assets/js/setup.js',
+        'assets/js/models/*.js',
+        'assets/js/views/*.js',
+        'assets/js/collections/*.js',
+        'assets/js/ready.js',
     ];
 
 module.exports = function(grunt) {
@@ -84,23 +92,29 @@ module.exports = function(grunt) {
                 files: uglify_files,
                 options: {
                     beautify: true,
-                    mangle: false
+                    mangle: false,
+                    sourceMap: true
                 },
             },
             // `grunt uglify:prod`
             prod: {
-                files: uglify_files
+                files: uglify_files,
+                options: {
+                    compress: {
+                        drop_console: true
+                    }
+                }
             }
         }, // uglify
         sass: {
             // `grunt sass:dev`
             dev: {
-                options: { style: "normal", sourcemap: true },
+                options: { outputStyle: "nested" },
                 files: sass_files,
             },
             // `grunt sass:prod`
             prod: {
-                options: { style: "compressed", sourcemap: true },
+                options: { outputStyle: "compressed" },
                 files: sass_files,
             }
 

@@ -1,13 +1,8 @@
 Toggle PSD
 ==================================
-Tags: toggle,psd,overlay,design,developer  
-Requires at least: 1.0  
-Tested up to: 1.0  
-Stable tag: trunk  
-License: GPLv2  
-License URI: http://www.gnu.org/licenses/gpl-2.0.html  
-
-This plugin allows you to overlay images of what you expect to the website look like (hopefully) when it is finished. It helps as a bridge between design and development.
+Tags: toggle,psd,overlay,design,developer, wordpress
+License: GPLv2
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Description
 ----------------------------------
@@ -24,7 +19,7 @@ Installation
 
 Frequently Asked Questions
 ----------------------------------
-1. Where is the negative margin being set?  
+1. Where is the negative margin being set?
 It is being set in Javascript. It takes the width of your image, halves it and sets that to the negative margin.
 
 Contributors
