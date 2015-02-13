@@ -50,6 +50,7 @@
     > .ab-item {
         cursor: pointer;
         &:before {
+            font-family: 'Open Sans', sans-serif!important;
             content: "Ps";
             color: #6D6E71;
             font-size: 12px;
