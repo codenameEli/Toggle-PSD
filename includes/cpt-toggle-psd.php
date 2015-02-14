@@ -30,7 +30,7 @@ function register_toggle_psd_cpt() {
         'show_in_admin_bar'   => true,
         'menu_position'       => 99,
         'can_export'          => true,
-        'has_archive'         => true,
+        'has_archive'         => false,
         'exclude_from_search' => true,
         'publicly_queryable'  => false,
     );
