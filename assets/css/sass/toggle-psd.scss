@@ -61,7 +61,7 @@
             margin: 6px 6px 6px 0;
             display: inline-block;
             text-align: center;
-            line-height: 8px;
+            line-height: 11px;
         }
     }
 
@@ -157,6 +157,7 @@
     position: absolute!important;
     z-index: 99;
     top: 32px; // Account for the WP admin bar
+    max-width: none!important;
     left: 50%;
     opacity: 0.6;
 }
