@@ -1,0 +1,517 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"get_errormess",
+				"WP_Error-get_error_message	WP Class Method"
+			],
+			[
+				"is_singl",
+				"is_singular	WP Function"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"eu_countr",
+				"eu_countries_lowercase"
+			],
+			[
+				"text",
+				"text-indent"
+			],
+			[
+				"wp_enque",
+				"wp_enqueue_script	WP Function"
+			],
+			[
+				"get_thumb",
+				"get_the_post_thumbnail_url	WP Function"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"font",
+				"fontBold"
+			],
+			[
+				"getthee",
+				"get_the_excerpt	WP Function"
+			],
+			[
+				"is_page",
+				"is_page_template	WP Function"
+			],
+			[
+				"prev_post_link",
+				"previous_post_link	WP Function"
+			],
+			[
+				"favor",
+				"favorite_feature"
+			],
+			[
+				"credentials",
+				"crendentials"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 336.0,
+		"last_filter": "html",
+		"selected_items":
+		[
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"syntax bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"pacak",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instl",
+				"Package Control: Install Local Dependency"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"set st php",
+				"Set Syntax: PHP"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Dalbey/vagrant/www/togglepsd/htdocs/wp-content/plugins/toggle-psd"
+	],
+	"file_history":
+	[
+		"/Users/Dalbey/vagrant/www/awesomeadmin/htdocs/wp-content/themes/awesome-admin/includes/admin-digest.php",
+		"/Users/Dalbey/vagrant/www/awesomeadmin/htdocs/wp-content/themes/awesome-admin/single-webinar.php",
+		"/Users/Dalbey/vagrant/www/awesomeadmin/htdocs/wp-content/themes/awesome-admin/page-admin-stories.php",
+		"/Users/Dalbey/vagrant/www/awesomeadmin/htdocs/wp-content/themes/awesome-admin/author.php",
+		"/Users/Dalbey/vagrant/www/awesomeadmin/htdocs/wp-content/themes/awesome-admin/resources/css/custom/single-author.scss",
+		"/Users/Dalbey/vagrant/www/awesomeadmin/htdocs/wp-content/themes/awesome-admin/resources/css/custom/single-webinar.scss",
+		"/Users/Dalbey/vagrant/www/awesomeadmin/htdocs/wp-content/themes/awesome-admin/page-guest-posting.php",
+		"/Users/Dalbey/vagrant/www/awesomeadmin/htdocs/wp-content/plugins/awesome-admin/includes/cpt-event-recaps.php",
+		"/Users/Dalbey/vagrant/www/awesomeadmin/htdocs/wp-content/plugins/awesome-admin/includes/cpt-admin-stories.php",
+		"/Users/Dalbey/vagrant/www/awesomeadmin/htdocs/wp-content/themes/awesome-admin/resources/css/styles.scss",
+		"/Users/Dalbey/vagrant/www/awesomeadmin/htdocs/wp-content/themes/awesome-admin/includes/query-args.php",
+		"/Users/Dalbey/vagrant/www/awesomeadmin/htdocs/wp-content/plugins/awesome-admin/includes/twitter-text-count.js",
+		"/Users/Dalbey/vagrant/www/awesomeadmin/htdocs/wp-content/themes/awesome-admin/resources/css/custom/page-admin-stories.scss",
+		"/Users/Dalbey/vagrant/www/awesomeadmin/htdocs/wp-content/themes/awesome-admin/lib/Utils/EloquaHandler.php",
+		"/Users/Dalbey/vagrant/www/awesomeadmin/htdocs/wp-content/themes/awesome-admin/resources/css/custom/single-admin-story.scss",
+		"/Users/Dalbey/vagrant/www/awesomeadmin/htdocs/wp-content/themes/awesome-admin/single-admin_story.php",
+		"/Users/Dalbey/vagrant/www/awesomeadmin/htdocs/wp-content/themes/awesome-admin/includes/image-sizes.php",
+		"/Users/Dalbey/vagrant/www/awesomeadmin/htdocs/wp-content/plugins/awesome-admin/includes/cpt-admin-highlights.php",
+		"/Users/Dalbey/vagrant/www/awesomeadmin/htdocs/wp-content/themes/awesome-admin/lib/Widget/SocialShareWidget.php",
+		"/Users/Dalbey/vagrant/www/awesomeadmin/htdocs/wp-content/themes/awesome-admin/includes/load-assets.php",
+		"/Users/Dalbey/vagrant/www/awesomeadmin/htdocs/wp-content/themes/awesome-admin/resources/css/custom/admin-digest.scss",
+		"/Users/Dalbey/vagrant/www/awesomeadmin/htdocs/wp-content/themes/awesome-admin/includes/featured-image.php",
+		"/Users/Dalbey/vagrant/www/awesomeadmin/htdocs/wp-content/themes/awesome-admin/page-resources.php",
+		"/Users/Dalbey/vagrant/www/awesomeadmin/htdocs/wp-content/themes/awesome-admin/front-page.php",
+		"/Users/Dalbey/vagrant/www/awesomeadmin/htdocs/wp-config.php",
+		"/Users/Dalbey/vagrant/www/awesomeadmin/htdocs/wp-content/themes/awesome-admin/lib/Utils/PardotHandler.php",
+		"/Users/Dalbey/vagrant/www/awesomeadmin/htdocs/wp-content/themes/awesome-admin/resources/css/custom/search.scss",
+		"/Users/Dalbey/vagrant/www/awesomeadmin/htdocs/wp-content/themes/awesome-admin/page-form.php",
+		"/Users/Dalbey/vagrant/www/awesomeadmin/.gitignore",
+		"/Users/Dalbey/vagrant/www/awesomeadmin/htdocs/wp-content/plugins/awesome-admin/includes/cpt-speakers.php",
+		"/Users/Dalbey/vagrant/www/awesomeadmin/switch-to-isoosi.sh",
+		"/Users/Dalbey/vagrant/www/awesomeadmin/switch-to-eli.sh",
+		"/Users/Dalbey/vagrant/www/gift/htdocs/wp-content/themes/gift/partials/video-cta.php",
+		"/Users/Dalbey/vagrant/www/gift/htdocs/wp-content/themes/gift/page-testimonials.php",
+		"/Users/Dalbey/vagrant/www/gift/htdocs/wp-content/themes/gift/assets/sass/includes/components/_featured-project-slideshow.scss",
+		"/Users/Dalbey/vagrant/www/gift/htdocs/wp-content/themes/gift/assets/sass/theme.scss",
+		"/Users/Dalbey/vagrant/www/gift/htdocs/wp-content/themes/gift/assets/sass/includes/_search.scss",
+		"/Users/Dalbey/vagrant/www/gift/htdocs/wp-content/themes/gift/assets/sass/includes/_buttons.scss",
+		"/Users/Dalbey/vagrant/www/gift/htdocs/wp-content/themes/gift/assets/sass/includes/_globals.scss",
+		"/Users/Dalbey/vagrant/www/gift/htdocs/wp-content/themes/gift/assets/sass/includes/_images.scss",
+		"/Users/Dalbey/vagrant/www/gift/htdocs/wp-content/themes/gift/assets/js/theme.js",
+		"/Users/Dalbey/vagrant/www/gift/htdocs/wp-content/themes/gift/taxonomy-location.php",
+		"/Users/Dalbey/vagrant/www/gift/htdocs/wp-content/themes/gift/assets/sass/includes/_taxonomy-location.scss",
+		"/Users/Dalbey/vagrant/www/gift/htdocs/wp-content/themes/gift/includes/cpt-testimonial.php",
+		"/Users/Dalbey/vagrant/www/gift/deploy-production.sh",
+		"/Users/Dalbey/.ssh/config",
+		"/Users/Dalbey/vagrant/www/gift/htdocs/wp-content/themes/gift/assets/sass/includes/_icons.scss",
+		"/Users/Dalbey/vagrant/www/gift/htdocs/wp-content/themes/gift/includes/image-sizes.php",
+		"/Users/Dalbey/vagrant/www/gift/.gitignore",
+		"/Users/Dalbey/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 136.0,
+		"where_history":
+		[
+			"",
+			"*.scss",
+			"*scss",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"$form",
+			"form",
+			"eloqua_handler",
+			"ldm_post_to_eloqua",
+			"ldm_post_to_pardot",
+			"12",
+			"2",
+			"EU_safeharbor_consent",
+			" =>",
+			"=>",
+			"base_url",
+			"ldm_display_admin_digest",
+			"capa",
+			"media",
+			"h2",
+			"content",
+			"next-author",
+			"h2",
+			"external_links",
+			"first-child",
+			".entry",
+			".form-container",
+			"  ",
+			"ldm_post_to_third_parties",
+			"	",
+			"  \"",
+			"“",
+			"href",
+			"HREF",
+			"iframe",
+			"21px",
+			"width: 365px;",
+			"textarea",
+			"admin_story",
+			"Stories",
+			"Story",
+			"Admin_Story",
+			"signle",
+			"8px",
+			"hash",
+			"twitter_text",
+			"features",
+			"margin-",
+			".admin-digest-container",
+			"9px",
+			"featured",
+			"social-link",
+			"content",
+			"fa-face",
+			"fa",
+			"linkedin_url",
+			"</b><br/>",
+			"<b class=\"sf-blue\">Favorite",
+			"sf-blue",
+			"25px",
+			"limit",
+			"text",
+			"featured-image-description",
+			"title",
+			"image",
+			"Admin Stories",
+			"h3",
+			"title",
+			"previous_post_link",
+			"<h5>",
+			"h5",
+			"favorite_feature",
+			"crendentials",
+			"author_meta",
+			"$author_meta",
+			"span",
+			"b",
+			"favorite_hack",
+			"favorite_feature",
+			"crendentials",
+			"linkedin_url",
+			"twitter_url",
+			"company",
+			"position",
+			"sf_do_archive_author_information",
+			"Speakers",
+			"webinar",
+			"Speaker",
+			"speaker",
+			"Speaker",
+			".search-overlay",
+			"pink",
+			"testimonial",
+			"testimonials",
+			"Testimonials_Slideshow",
+			"testimonials_slideshow",
+			"section",
+			"content",
+			"title",
+			"video_cta",
+			"content",
+			"tower_do_additional_content_section",
+			"h4",
+			"testimonials",
+			"'testimonials'",
+			"'post_type' => 'testimonials',",
+			"tower_do_single_location_employee",
+			"h2",
+			"background-color",
+			"fa",
+			"color:",
+			" color: ",
+			"Color",
+			"color",
+			"professionals_information_linkedin_url"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 45.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 128.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.xdebug":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "toggle-psd.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"eloqua",
+				"htdocs/wp-content/themes/awesome-admin/lib/Utils/EloquaHandler.php"
+			],
+			[
+				"pardot",
+				"htdocs/wp-content/themes/awesome-admin/lib/Utils/PardotHandler.php"
+			],
+			[
+				"singleadmin",
+				"htdocs/wp-content/themes/awesome-admin/resources/css/custom/single-admin-story.scss"
+			],
+			[
+				"admin-storiesscss",
+				"htdocs/wp-content/themes/awesome-admin/resources/css/custom/page-admin-stories.scss"
+			],
+			[
+				"image-sizes",
+				"htdocs/wp-content/themes/awesome-admin/includes/image-sizes.php"
+			],
+			[
+				"loadas",
+				"htdocs/wp-content/themes/awesome-admin/includes/load-assets.php"
+			],
+			[
+				"images",
+				"htdocs/wp-content/themes/awesome-admin/includes/image-sizes.php"
+			],
+			[
+				"imagesize",
+				"htdocs/wp-content/themes/awesome-admin/includes/image-sizes.php"
+			],
+			[
+				"",
+				"htdocs/wp-content/themes/awesome-admin/page-admin-stories.php"
+			],
+			[
+				"loadass",
+				"htdocs/wp-content/themes/awesome-admin/includes/load-assets.php"
+			],
+			[
+				"image-sizs",
+				"htdocs/wp-content/themes/gift/includes/image-sizes.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"warfel",
+				"~/vagrant/www/warfel/htdocs/warfel.sublime-project"
+			],
+			[
+				"",
+				"~/vagrant/www/warfel/htdocs/warfel.sublime-project"
+			],
+			[
+				"warfe",
+				"~/vagrant/www/warfel/htdocs/warfel.sublime-project"
+			],
+			[
+				"gift",
+				"~/vagrant/www/gift/htdocs/gift.sublime-project"
+			],
+			[
+				"gif",
+				"~/vagrant/www/gift/htdocs/gift.sublime-project"
+			],
+			[
+				"\\",
+				"~/vagrant/www/warfel/htdocs/warfel.sublime-project"
+			],
+			[
+				"warf",
+				"~/vagrant/www/warfel/htdocs/warfel.sublime-project"
+			],
+			[
+				"war",
+				"~/vagrant/www/warfel/htdocs/warfel.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 388.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

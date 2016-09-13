@@ -1,0 +1,18 @@
+{
+    "name": "codename-eli/toggle",
+    "description": "This is some description",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tim 'Eli' Dalbey",
+            "email": "timdalbey13@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Toggle\\": "src/"
+        }
+    }
+}
